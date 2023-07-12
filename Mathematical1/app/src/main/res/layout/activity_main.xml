@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Calculator"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/etfirstvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter firstvalue"
+        android:layout_margin="10dp"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/etsecondvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter second value"
+        android:layout_margin="10dp"
+        android:inputType="number"/>
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ADD"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/black"
+            />
+        <Button
+            android:id="@+id/btnsubs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SUB"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/black"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnmultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MUL"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/black"
+            />
+        <Button
+            android:id="@+id/btndivision"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DIV"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/black"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
